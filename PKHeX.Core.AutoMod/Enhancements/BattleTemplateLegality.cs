@@ -9,20 +9,20 @@ namespace PKHeX.Core.AutoMod;
 
 public static class BattleTemplateLegality
 {
-    public static string ANALYSIS_INVALID { get; set; } = "Specific analysis for this set is unavailable.";
-    public static string EXHAUSTED_ENCOUNTERS { get; set; } = "No valid matching encounter available: (Exhausted {0}/{1} possible encounters).";
-    public static string SPECIES_UNAVAILABLE_FORM { get; set; } = "{0} with form {1} is unavailable in this game.";
-    public static string SPECIES_UNAVAILABLE { get; set; } = "{0} is unavailable in the game.";
-    public static string INVALID_MOVES { get; set; } = "{0} cannot learn the following move(s) in this game: {1}.";
-    public static string ALL_MOVES_INVALID { get; set; } = "All the requested moves for this Pokémon are invalid.";
-    public static string LEVEL_INVALID { get; set; } = "Requested level is lower than the minimum possible level for {0}. Minimum required level is {1}.";
-    public static string SHINY_INVALID { get; set; } = "Requested shiny value (ShinyType.{0}) is not possible for the given set.";
-    public static string ALPHA_INVALID { get; set; } = "Requested Pokémon cannot be an Alpha.";
-    public static string BALL_INVALID { get; set; } = "{0} Ball is not possible for the given set.";
-    public static string ONLY_HIDDEN_ABILITY_AVAILABLE { get; set; } = "You can only obtain {0} with hidden ability in this game.";
-    public static string HIDDEN_ABILITY_UNAVAILABLE { get; set; } = "You cannot obtain {0} with hidden ability in this game.";
-    public static string HOME_TRANSFER_ONLY { get; set; } = "{0} is only available in this game through Home Transfer.";
-    public static string BAD_WORDS { get; set; } = "{0}'s nickname, OT or HT contains a filtered word.";
+public static string ANALYSIS_INVALID { get; set; } = "El análisis específico para ese set no está disponible.";
+public static string EXHAUSTED_ENCOUNTERS { get; set; } = "No hay ningún encuentro válido dentro del juego que coincida con tus datos: (Se agotaron {0}/{1} encuentros posibles).";
+public static string SPECIES_UNAVAILABLE_FORM { get; set; } = "{0} con la forma {1} no está disponible en este juego.";
+public static string SPECIES_UNAVAILABLE { get; set; } = "{0} no está disponible en el juego.";
+public static string INVALID_MOVES { get; set; } = "{0} no puede aprender los siguientes movimiento(s) en este juego: {1}.";
+public static string ALL_MOVES_INVALID { get; set; } = "Todos los movimientos solicitados para este Pokémon no son válidos.";
+public static string LEVEL_INVALID { get; set; } = "El nivel solicitado es menor que el nivel mínimo posible para {0}. El nivel mínimo requerido es {1}.";
+public static string SHINY_INVALID { get; set; } = "El Pokémon tiene Shiny Lock.";
+public static string ALPHA_INVALID { get; set; } = "El Pokémon solicitado no puede ser Alfa.";
+public static string BALL_INVALID { get; set; } = "La Poké Ball {0} no es posible para el conjunto indicado.";
+public static string ONLY_HIDDEN_ABILITY_AVAILABLE { get; set; } = "En este juego, solo puedes obtener a {0} con habilidad oculta.";
+public static string HIDDEN_ABILITY_UNAVAILABLE { get; set; } = "En este juego, no puedes obtener a {0} con habilidad oculta.";
+public static string HOME_TRANSFER_ONLY { get; set; } = "{0} solo está disponible en este juego mediante transferencia desde HOME.";
+public static string BAD_WORDS { get; set; } = "El apodo, EO o HT de {0} contiene una palabra filtrada.";
 
     public static string SetAnalysis(this IBattleTemplate set, ITrainerInfo sav, PKM failed)
     {
